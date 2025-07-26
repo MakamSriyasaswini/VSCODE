@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Studio Code</title>
+    <link rel="stylesheet" href="vsstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div id="navbar" class="sec">
+            <div id="left">
+                <ul>
+                    <li>
+                        <a href="" class="platform">Visual Studio Code</a>
+                    </li>
+                    <li>
+                        <a href="">Docs</a>
+                    </li>
+                    <li>
+                        <a href="">Updates</a>
+                    </li>
+                    <li>
+                        <a href="">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="">API</a>
+                    </li>
+                    <li>
+                        <a href="">Extentions</a>
+                    </li>
+                    <li>
+                        <a href="">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="">Github Copilot</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="right">
+                <div class="dark">
+                    <img src="./NAV/theme-dark.svg" class="themedark">
+                </div>
+                <div class="light">
+                    <i class="fa-thin fa-sun"></i>
+                </div>
+                <div id="search">
+                    <i class="fa-solid fa-magnifying-glass icon"></i>
+                    <input type="text" placeholder="Search Docs" class="search-input">
+                </div>
+                <input type="button" value="Download" class="btn">
+            </div>
+        </div>
+    </nav>
+    <div id="belownav">
+        <p>Try <a href="" class="line">agent mode</a> in VS Code!</p><span><i class="fa-solid fa-xmark"></i></span>
+    </div>
+    <div id="main">
+        <div class="sec">
+            <h1>Your code editor. <br>Redefined with AI.</h1>
+            <div id="buttons">
+                <input type="button" value="Download for Windows" class="btn mainbutton">
+                <input type="button" value="Try agent mode" class="agenetbtn">
+            </div>
+            <p class="links">
+                <a href="" class="line">web</a>,
+                <a href="" class="line">Insiders edition</a>, or
+                <a href="" class="line">Other platforms</a>
+            </p>
+            <div id="display">
+                <p>By using VS Code, you agree to its <b><a href="" class="showline"> license </a></b>and <b><a href=""
+                            class="showline"> privacy statement </a></b></p>
+            </div>
+        </div>
+        <div class="sec">
+            <img src="./hero-background.webp" class="background">
+        </div>
+        <div class="sec">
+            <div class="playbtn">
+                <p>Play</p>
+            </div>
+        </div>
+    </div>
+    <div id="processcards" class="sec">
+        <div id="card1">
+            <div class="top">
+                <h2>Any model for any team</h2>
+                <p class="processinfo">Use AI models like Claude Sonnet out of the box, or bring your own key to access
+                    models from Azure,
+                    Anthropic, Google, Ollama, OpenAI, and OpenRouter.</p>
+                <div class="image">
+                    <img src="./CARDS/claude.png" class="claude">
+                </div>
+            </div>
+        </div>
+        <div id="card2">
+            <div class="top">
+                <h2>An expert on your codebase</h2>
+                <p class="processinfo">Your codebase is indexed locally and remotely (on GitHub) to understand what's
+                    relevant, enabling fast, context-aware interactions.</p>
+                <div class="image">
+                    <img src="./CARDS/addcontext.png" class="addcontext">
+                </div>
+            </div>
+        </div>
+        <div id="card3">
+            <div class="top">
+                <h2>AI that works the way your team does</h2>
+                <p class="processinfo">Personalize interactions using custom instructions and reusable prompt files
+                    tailored to your workflows, tools, and projects.</p>
+                <div class="image">
+                    <img src="./CARDS/github.png" class="github">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="features" class="sec">
+        <div class="ai">
+            <h1>Use AI features in VS Code for free</h1>
+        </div>
+        <div class="aidesc">
+            <p>No trial. No credit card required. Just your GitHub account.</p>
+            <input type="button" value="Try Free" class="trybtn">
+        </div>
+    </div>
+    <div id="kenzi" class="sec">
+        <div class="left">
+            <h1>Agent mode</h1>
+            <p>Tackle complex, multi-step tasks. Agent mode reads your codebase, suggests edits across files, runs
+                terminal commands, and responds to compile or test failures — all in a loop until the job is done.
+                Further refine agent mode to fit your team's workflows with VS Code extensions and Model Context
+                Protocol (MCP) servers.</p>
+            <a href="" class="line">Build with agent mode</a>
+        </div>
+        <div class="right">
+            <img src="./IMAGES/kenzi.png" class="kenziimg">
+        </div>
+    </div>
+    <div id="postjs" class="sec">
+        <div class="left">
+            <h1>Next edit suggestions</h1>
+            <p>VS Code predicts your next move as you code. Use the Tab key to accept AI-powered suggestions right in
+                your editor. It intelligently recommends what to change — and where — based on the edits you're already
+                making.</p>
+            <a href="" class="line">Code with AI-powered suggestions</a>
+        </div>
+        <div class="right">
+            <img src="./IMAGES/postjs.png" class="postimg">
+        </div>
+    </div>
+    <div id="extensions" class="sec">
+        <div class="left">
+            <h1>Code with extensions</h1>
+            <p>Customize VS Code with AI-powered functionality from extensions and Model Context Protocol servers to use
+                in Chat. Or, <a href="" class="line">build your own extension</a> to power your team's unique scenarios.
+            </p>
+        </div>
+        <div class="rightboxs">
+            <div id="row1">
+                <div id="box1">
+                    <div class="leftbox1">
+                        <img src="./EXTINTION/python-extension.png" class="extensionimg">
+                    </div>
+                    <div class="rightbox1">
+                        <h3>Python</h3>
+                        <p>Adds rich language support for python</p>
+                    </div>
+                </div>
+                <div id="box2">
+                    <div class="leftbox2">
+                        <img src="./EXTINTION/remote-extension.png" class="extensionimg">
+                    </div>
+                    <div class="rightbox2">
+                        <h3>Stripe</h3>
+                        <p>Build,test,and use stripe inside your editor</p>
+                    </div>
+                </div>
+                <div id="box3">
+                    <div class="leftbox3">
+                        <img src="./EXTINTION/c-extension.png" class="extensionimg">
+                    </div>
+                    <div class="rightbox3">
+                        <h3>c/c++</h3>
+                        <p>Adds rich language support for c/c++</p>
+                    </div>
+                </div>
+            </div>
+            <div id="row2">
+                <div id="box1">
+                    <div class="leftbox1">
+                        <img src="./EXTINTION/jupyter-extension.png" class="extensionimg">
+                    </div>
+                    <div class="rightbox1">
+                        <h3>Jupyter</h3>
+                        <p>Language support for Jupyer Notebooks</p>
+                    </div>
+                </div>
+                <div id="box2">
+                    <div class="leftbox2">
+                        <img src="./EXTINTION/gitlens-extension.png" class="extensionimg">
+                    </div>
+                    <div class="rightbox2">
+                        <h3>GitLens</h3>
+                        <p>Supercharge your Git experience</p>
+                    </div>
+                </div>
+                <div id="box3">
+                    <div class="leftbox3">
+                        <img src="./EXTINTION/cs-dev-kit-extension.png" class="extensionimg">
+                    </div>
+                    <div class="rightbox3">
+                        <h3>c# Dev Kit</h3>
+                        <p>Powerful tools for your C# environment</p>
+                    </div>
+                </div>
+            </div>
+            <div id="row3">
+                <div id="box1">
+                    <div class="leftbox1">
+                        <img src="./EXTINTION/mongodb-extension.png" class="extensionimg">
+                    </div>
+                    <div class="rightbox1">
+                        <h3>MongoDB</h3>
+                        <p>Extension for the @MongoDB agent</p>
+                    </div>
+                </div>
+                <div id="box2">
+                    <div class="leftbox2">
+                        <img src="./EXTINTION/azure.png" class="extensionimg">
+                    </div>
+                    <div class="rightbox2">
+                        <h3>GitHub Copliot for Azure</h3>
+                        <p>Streamline the process of devepoling for Azure</p>
+                    </div>
+                </div>
+                <div id="box3">
+                    <div class="leftbox3">
+                        <img src="./EXTINTION/remote-extension.png" class="extensionimg">
+                    </div>
+                    <div class="rightbox3">
+                        <h3>Remote Developmnent</h3>
+                        <p>Open folders in a container on a remote machine</p>
+                    </div>
+                </div>
+            </div>
+            <p class="expara">View 60k+ extensions in the <a href="" class="line">Extension Marketplace</a></p>
+        </div>
+    </div>
+    <div id="languages" class="sec">
+        <div class="left">
+            <h1>
+                Code in any language
+            </h1>
+            <p>
+                VS Code supports almost every major programming language. Several ship in the box, like JavaScript,
+                TypeScript, CSS, and HTML, but extensions for others can be found in the VS Code Marketplace.
+            </p>
+        </div>
+        <div class="right">
+            <div id="row1">
+                <div id="lang1">
+                    <div class="leftlang1">
+                        <img src="./ICONS/language-js.png" class="extensionimg">
+                    </div>
+                    <div class="rightlang1">
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <div id="lang2">
+                    <div class="leftlang2">
+                        <img src="./ICONS/language-ts.png" class="extensionimg">
+                    </div>
+                    <div class="rightlan2">
+                        <p>TypeScript</p>
+                    </div>
+                </div>
+                <div id="lang3">
+                    <div class="leftlang3">
+                        <img src="./ICONS/language-python.png" class="extensionimg">
+                    </div>
+                    <div class="rightlang3">
+                        <p>Python</p>
+                    </div>
+                </div>
+            </div>
+            <div id="row2">
+                <div id="lang1">
+                    <div class="leftlang1">
+                        <img src="./ICONS/language-cs.png" class="extensionimg">
+                    </div>
+                    <div class="rightlang1">
+                        <p>C#</p>
+                    </div>
+                </div>
+                <div id="lang2">
+                    <div class="leftlang2">
+                        <img src="./ICONS/language-cpp.png" class="extensionimg">
+                    </div>
+                    <div class="rightlang2">
+                        <p>C++</p>
+                    </div>
+                </div>
+                <div id="lang3">
+                    <div class="leftlang3">
+                        <img src="./ICONS/language-html.png" class="extensionimg">
+                    </div>
+                    <div class="rightlang3">
+                        <p>HTML</p>
+                    </div>
+                </div>
+            </div>
+            <div id="row3">
+                <div id="lang1">
+                    <div class="leftlang1">
+                        <img src="./ICONS/language-java.png" class="extensionimg">
+                    </div>
+                    <div class="rightlang1">
+                        <p>Java</p>
+                    </div>
+                </div>
+                <div id="lang2">
+                    <div class="leftlang2">
+                        <img src="./ICONS/language-json.png" class="extensionimg">
+                    </div>
+                    <div class="rightlang2">
+                        <p>JSON</p>
+                    </div>
+                </div>
+                <div id="lang3">
+                    <div class="leftlang3">
+                        <img src="./ICONS/language-php.png" class="extensionimg">
+                    </div>
+                    <div class="rightlang3">
+                        <p>PHP</p>
+                    </div>
+                </div>
+            </div>
+            <div id="row4">
+                <div id="lang1">
+                    <div class="leftlang1">
+                        <img src="./ICONS/language-markdown.png" class="extensionimg">
+                    </div>
+                    <div class="rightlang1">
+                        <p>Markdown</p>
+                    </div>
+                </div>
+                <div id="lang2">
+                    <div class="leftlang2">
+                        <img src="./ICONS/language-powershell.png" class="extensionimg">
+                    </div>
+                    <div class="rightlang2">
+                        <p>Powershell</p>
+                    </div>
+                </div>
+                <div id="lang3">
+                    <div class="leftlang3">
+                        <img src="./ICONS/language-yaml.png" class="extensionimg">
+                    </div>
+                    <div class="rightlang3">
+                        <p>YAML</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="customization" class="sec">
+        <div class="left">
+            <h1>Fully customizable</h1>
+            <p>Customize your VS Code UI and layout so that it fits your coding style.</p>
+            <p><a href="" class="line">Color themes</a> let you modify the colors in VS Code's user interface to suit
+                your preferences and work environment.</p>
+            <p><a href="" class="line">Settings Sync</a> enables you to share your user settings across your VS Code
+                instances with the Settings Sync feature.</p>
+            <p><a href="" class="line">Profiles</a> let you create sets of customizations and quickly switch between
+                them or share them with others.</p>
+        </div>
+        <div class="right">
+            <img src="./IMAGES/swimlane-customized-light.png" class="customizedlight">
+        </div>
+    </div>
+    <div id="code" class="sec">
+        <div class="left">
+            <h1>Code anywhere</h1>
+            <p>Code wherever you're most productive, whether you're connected to the cloud, a remote repository, or in
+                the browser with VS Code for the Web (vscode.dev).</p>
+            <p><a href="" class="line">Built-in Source Control</a> empowers you with Git support out-of-the-box. Many
+                other source control providers are available through extensions.</p>
+            <p><a href="" class="line">GitHub Codespaces</a> provides cloud-powered development environments for any
+                activity - whether it's a long-term project, or a short-term task like reviewing a pull request.</p>
+        </div>
+        <div class="right">
+            <img src="./IMAGES/swimlane-anywhere-light.png" class="anywherelight">
+        </div>
+    </div>
+    <div id="richfeatures" class="sec">
+        <h1>Code with rich features</h1>
+        <p>There's a lot more to an editor. Whether it's using built-in features or rich extensions, there's something
+            for everyone.</p>
+    </div>
+    <div id="featuregrid" class="sec">
+        <div id="row1">
+            <div class="block">
+                <div class="up">
+                    <img src="ICONS/codicon-terminal.svg" class="icon">
+                </div>
+                <div class="down">
+                    <h3>Integrated terminal</h3>
+                    <p>Use your favorite shell whether it's zsh,pwsh, or git bash,all inside the editor.</p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="up">
+                    <img src="./ICONS/codicon-debug.svg" class="icon">
+                </div>
+                <div class="down">
+                    <h3>Run code</h3>
+                    <p>Run and debug your cod ewithout leaving your editor.</p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="up">
+                    <img src="./ICONS/codicon-version-control.svg" class="icon">
+                </div>
+                <div class="down">
+                    <h3>Version control</h3>
+                    <p>Built-in support for git and many other source control providers</p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="up">
+                    <img src="./ICONS/codicon-build-tasks (1).svg">
+                </div>
+                <div class="down">
+                    <h3>Build tasks</h3>
+                    <p>Run tools and analyze their results from within VS Code.</p>
+                </div>
+            </div>
+        </div>
+        <div id="row2">
+            <div class="block">
+                <div class="up">
+                    <img src="./ICONS/codicon-local-history.svg" class="icon">
+                </div>
+                <div class="down">
+                    <h3>Local history</h3>
+                    <p>Never lose your changes with automatically tracked local history.</p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="up">
+                    <img src="./ICONS/codicon-themes.svg" class="icon">
+                </div>
+                <div class="down">
+                    <h3>Themes</h3>
+                    <p>Your theme is an extension of your personality. Add some flair to your editor and add your touch.
+                    </p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="up">
+                    <img src="./ICONS/codicon-accessibility.svg" class="icon">
+                </div>
+                <div class="down">
+                    <h3>Accessibility</h3>
+                    <p>Optimized experiencefor screen readers, high contrast themes, and keyboard-only navigation.</p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="up">
+                    <img src="./ICONS/codicon-web.svg" class="icon">
+                </div>
+                <div class="down">
+                    <h3>Web support</h3>
+                    <p>Whether you are on your phone, tablet, or desktop,you can access your code from anywhere.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footerimgs">
+            <img src="./ICONS/x-icon.svg" class="xicon">
+            <img src="./ICONS/youtube-icon.svg" class="youtubeicon">
+            <img src="./ICONS/microsoft.svg" class="microsofticon">
+        </div>
+        <div>
+            <ul class="footertags">
+                <li>Support</li>
+                <li>Privacy</li>
+                <li>Terms of Use</li>
+                <li>License</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
